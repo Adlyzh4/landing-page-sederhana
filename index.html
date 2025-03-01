@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Sederhana</title>
+    
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="./assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="/assets/js/script.js">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
           <a class="navbar-brand fw-bold" href="#">Perusahaan</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -32,15 +35,16 @@
           </div>
       </div>
     </nav>
-
+    
+    <!-- main section -->
   <main class="main">
     
     <!-- Hero Section -->
-    <section id="hero" class="hero position-relative text-white d-flex align-items-center">
+    <section id="hero" class="hero position-relative text-white d-flex align-items-center shapedividers_com-5047">
         <div class="overlay"></div>
         <div class="container position-relative">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
                     <h1 class="display-4 fw-bold">Selamat Datang di Website Kami</h1>
                     <p class="lead">Solusi terbaik untuk kebutuhan Anda</p>
                     <a href="#about" class="btn btn-primary btn-lg mt-3">Pelajari Lebih Lanjut</a>
@@ -49,11 +53,12 @@
         </div>
     </section>
     
+    
     <!-- About Section -->
-    <section id="about" class="container text-start my-5">
+    <section id="about" class="container text-start py-5">
       <div class="row gy-5 align-items-center">
           <!-- Bagian Kiri (Deskripsi) -->
-          <div class="col-xl-5">
+          <div class="col-xl-5" data-aos="fade-right" data-aos-delay="100">
               <h2 class="fw-bold">Tentang Kami</h2>
               <p class="lead">Kami menyediakan layanan berkualitas tinggi untuk membantu bisnis Anda berkembang.</p>
           </div>
@@ -61,7 +66,7 @@
           <!-- Bagian Kanan (Fitur) -->
           <div class="col-xl-7">
               <div class="row gy-4">
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
                       <div class="card feature-card">
                           <div class="card-body text-center">
                               <div class="feature-icon">⚡</div>
@@ -70,7 +75,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
                       <div class="card feature-card">
                           <div class="card-body text-center">
                               <div class="feature-icon">🚀</div>
@@ -79,7 +84,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
                       <div class="card feature-card">
                           <div class="card-body text-center">
                               <div class="feature-icon">🔒</div>
@@ -88,7 +93,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="zoom-in" data-aos-delay="500">
                       <div class="card feature-card">
                           <div class="card-body text-center">
                               <div class="feature-icon">📈</div>
@@ -103,46 +108,46 @@
     </section>
     
     <!-- Features Section -->
-    <section id="features" class="container my-5 features-section">
+    <section id="features" class="container features-section py-5">
       <div class="container text-center">
-        <h2 class="section-title" data-aos="fade-up">Check Our <span class="highlight">Featurs</span></h2>
+        <h2 class="section-title" data-aos="fade-up">Check Our <span class="highlight" data-counted="false">Features</span></h2>
     </div>
         <div class="row text-center gy-4 mt-5">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-delay="100">
                 <div class="card shadow-lg border-0 p-3">
                     <div class="card-body">
                         <div class="feature-icon text-primary fs-1">⚡</div>
-                        <h5 class="card-title mt-3 fw-bold">100</h5>
+                        <h5 class="card-title mt-3 fw-bold count-number" data-target="10" data-counted="false">0</h5>
                         <p class="card-text">Members</p>
                     </div>
                 </div>
             </div>
     
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-delay="200">
                 <div class="card shadow-lg border-0 p-3">
                     <div class="card-body">
                         <div class="feature-icon text-success fs-1">🚀</div>
-                        <h5 class="card-title mt-3 fw-bold">100</h5>
+                        <h5 class="card-title mt-3 fw-bold count-number" data-target="50" data-counted="false">0</h5>
                         <p class="card-text">Teams</p>
                     </div>
                 </div>
             </div>
     
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-delay="300">
                 <div class="card shadow-lg border-0 p-3">
                     <div class="card-body">
                         <div class="feature-icon text-danger fs-1">💡</div>
-                        <h5 class="card-title mt-3 fw-bold">100</h5>
+                        <h5 class="card-title mt-3 fw-bold count-number" data-target="20" data-counted="false">0</h5>
                         <p class="card-text">Fiturs</p>
                     </div>
                 </div>
             </div>
     
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6" data-aos="flip-up" data-aos-delay="400">
                 <div class="card shadow-lg border-0 p-3">
                     <div class="card-body">
                         <div class="feature-icon text-warning fs-1">🔒</div>
-                        <h5 class="card-title mt-3 fw-bold">100</h5>
+                        <h5 class="card-title mt-3 fw-bold count-number" data-target="30" data-counted="false">0</h5>
                         <p class="card-text">Gallerys</p>
                     </div>
                 </div>
@@ -158,10 +163,10 @@
 
       <div class="container">
           <div class="row align-items-center py-5">
-              <div class="col-md-5 text-center" data-aos="zoom-out" data-aos-delay="100">
+              <div class="col-md-5 text-center" data-aos="fade-right" data-aos-delay="100">
                   <img src="assets/img/tamplatekelas.PNG" class="img-fluid rounded shadow-lg img-hover" alt="Feature Image">
               </div>
-              <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-md-7" data-aos="fade-right" data-aos-delay="100">
                   <h3 class="fw-bold">Solusi Terbaik untuk Kebutuhan Anda</h3>
                   <p class="lead text-muted">
                       Kami menyediakan solusi inovatif untuk memaksimalkan efisiensi dan produktivitas bisnis Anda.
@@ -175,10 +180,10 @@
           </div>
 
           <div class="row align-items-center py-5">
-              <div class="col-md-5 order-md-2 text-center" data-aos="zoom-out" data-aos-delay="200">
+              <div class="col-md-5 order-md-2 text-center" data-aos="fade-left" data-aos-delay="200">
                   <img src="assets/img/tamplatekelas.PNG" class="img-fluid rounded shadow-lg img-hover" alt="Feature Image">
               </div>
-              <div class="col-md-7 order-md-1" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-7 order-md-1" data-aos="fade-left" data-aos-delay="200">
                   <h3 class="fw-bold">Meningkatkan Produktivitas Anda</h3>
                   <p class="lead text-muted">
                       Kami memberikan kemudahan bagi Anda untuk mengelola bisnis dengan lebih efisien dan fleksibel.
@@ -191,8 +196,8 @@
       </div>
     </section>
 
-    <!-- Galert Section -->
-    <section id="gallerys" class="gallery section py-5 bg-light">
+    <!-- Gallery Section -->
+    <section id="gallerys" class="gallery section bg-light py-5">
       <!-- Section Title -->
       <div class="container text-center mb-4" data-aos="fade-up">
           <h2 class="text-primary fw-bold text-uppercase">Gallery</h2>
@@ -203,7 +208,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row g-3">
               <!-- Gallery Item -->
-              <div class="col-lg-3 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
                   <div class="gallery-item">
                       <a href="assets/img/tamplatekelas.PNG" class="glightbox" data-gallery="images-gallery">
                           <img src="assets/img/tamplatekelas.PNG" alt="" class="img-fluid shadow rounded gallery-img">
@@ -212,7 +217,7 @@
               </div>
               <!-- End Gallery Item -->
   
-              <div class="col-lg-3 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
                   <div class="gallery-item">
                       <a href="assets/img/tamplatekelas.PNG" class="glightbox" data-gallery="images-gallery">
                           <img src="assets/img/tamplatekelas.PNG" alt="" class="img-fluid shadow rounded gallery-img">
@@ -221,7 +226,7 @@
               </div>
               <!-- End Gallery Item -->
   
-              <div class="col-lg-3 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
                   <div class="gallery-item">
                       <a href="assets/img/tamplatekelas.PNG" class="glightbox" data-gallery="images-gallery">
                           <img src="assets/img/tamplatekelas.PNG" alt="" class="img-fluid shadow rounded gallery-img">
@@ -234,15 +239,15 @@
     </section>
 
     <!-- Team Section -->
-    <section id="teams" class="team section py-5 bg-light">
+    <section id="teams" class="team section bg-light py-5">
       <div class="container text-center">
           <!-- Section Title -->
-          <h2 class="fw-bold mb-4 text-primary">Meet Our Team</h2>
-          <p class="text-muted mb-5">Tim profesional kami siap membantu Anda</p>
+          <h2 class="fw-bold mb-4 text-primary" data-aos="fade-up">Meet Our Team</h2>
+          <p class="text-muted mb-5" data-aos="fade-up" data-aos-delay="100">Tim profesional kami siap membantu Anda</p>
 
           <div class="row g-4">
               <!-- Team Member -->
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                   <div class="card border-0 shadow-lg team-member">
                       <div class="position-relative">
                           <img src="assets/img/tamplatekelas.PNG" class="card-img-top img-fluid team-img" alt="Walter White">
@@ -262,7 +267,7 @@
               </div>
               <!-- End Team Member -->
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                   <div class="card border-0 shadow-lg team-member">
                       <div class="position-relative">
                           <img src="assets/img/tamplatekelas.PNG" class="card-img-top img-fluid team-img" alt="Sarah Jhonson">
@@ -282,7 +287,7 @@
               </div>
               <!-- End Team Member -->
 
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                   <div class="card border-0 shadow-lg team-member">
                       <div class="position-relative">
                           <img src="assets/img/tamplatekelas.PNG" class="card-img-top img-fluid team-img" alt="William Anderson">
@@ -306,27 +311,27 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq section py-5 bg-light">
+    <section id="faq" class="faq section bg-light py-5">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-lg-8">
-            <h2 class="fw-bold mb-3">Frequently Asked <span class="text-primary">Questions</span></h2>
-            <p class="text-muted">
+            <h2 class="fw-bold mb-3" data-aos="fade-up">Frequently Asked <span class="text-primary">Questions</span></h2>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="100">
               Temukan jawaban dari pertanyaan yang sering diajukan oleh pengguna kami.
             </p>
           </div>
         </div>
 
         <div class="row align-items-center mt-4">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <img src="assets/img/tamplatekelas.PNG" class="img-fluid rounded shadow-lg" alt="FAQ Image">
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="accordion" id="faqAccordion">
 
               <!-- FAQ 1 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
                     <i class="bi bi-question-circle me-2"></i> Non consectetur a erat nam at lectus urna duis?
@@ -340,7 +345,7 @@
               </div>
 
               <!-- FAQ 2 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
                     <i class="bi bi-question-circle me-2"></i> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
@@ -354,7 +359,7 @@
               </div>
 
               <!-- FAQ 3 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
                     <i class="bi bi-question-circle me-2"></i> Dolor sit amet consectetur adipiscing elit pellentesque?
@@ -374,17 +379,17 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section py-5 bg-light">
+    <section id="contact" class="contact section bg-light py-5">
       <div class="container text-center">
-          <h2 class="fw-bold text-primary">Contact</h2>
-          <p class="text-muted">Check Our <span class="fw-semibold">Contact Information</span></p>
+          <h2 class="fw-bold text-primary" data-aos="fade-up">Contact</h2>
+          <p class="text-muted" data-aos="fade-up" data-aos-delay="100">Check Our <span class="fw-semibold">Contact Information</span></p>
       </div>
 
       <div class="container mt-4">
           <div class="row gy-4">
               <!-- Contact Info -->
               <div class="col-lg-4">
-                  <div class="info-item d-flex align-items-center p-3 bg-white shadow rounded mb-3">
+                  <div class="info-item d-flex align-items-center p-3 bg-white shadow rounded mb-3" data-aos="zoom-in" data-aos-delay="200">
                       <i class="bi bi-geo-alt fs-3 text-primary me-3"></i>
                       <div>
                           <h5 class="fw-bold">Address</h5>
@@ -392,7 +397,7 @@
                       </div>
                   </div>
 
-                  <div class="info-item d-flex align-items-center p-3 bg-white shadow rounded mb-3">
+                  <div class="info-item d-flex align-items-center p-3 bg-white shadow rounded mb-3" data-aos="zoom-in" data-aos-delay="300">
                       <i class="bi bi-telephone fs-3 text-primary me-3"></i>
                       <div>
                           <h5 class="fw-bold">Call Us</h5>
@@ -400,7 +405,7 @@
                       </div>
                   </div>
 
-                  <div class="info-item d-flex align-items-center p-3 bg-white shadow rounded mb-3">
+                  <div class="info-item d-flex align-items-center p-3 bg-white shadow rounded mb-3" data-aos="zoom-in" data-aos-delay="400">
                       <i class="bi bi-envelope fs-3 text-primary me-3"></i>
                       <div>
                           <h5 class="fw-bold">Email Us</h5>
@@ -410,7 +415,7 @@
               </div>
 
               <!-- Contact Form -->
-              <div class="col-lg-8">
+              <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
                   <div class="card shadow p-4">
                       <form action="forms/contact.php" method="post">
                           <div class="row gy-3">
@@ -445,9 +450,9 @@
 
       <div class="container footer-top">
           <div class="row gy-4">
-              <div class="col-lg-4 col-md-6 footer-about">
+              <div class="col-lg-4 col-md-6 footer-about" data-aos="fade-up" data-aos-delay="100">
                   <a href="index.html" class="logo d-flex align-items-center">
-                      <span class="sitename fw-bold fs-4">Bootslander</span>
+                      <span class="sitename fw-bold fs-4">Perusahaan</span>
                   </a>
                   <div class="footer-contact pt-3">
                       <p><i class="bi bi-geo-alt-fill me-2"></i>A108 Adam Street, New York, NY 535022</p>
@@ -462,7 +467,7 @@
                   </div>
               </div>
 
-              <div class="col-lg-2 col-md-3 footer-links">
+              <div class="col-lg-2 col-md-3 footer-links" data-aos="fade-up" data-aos-delay="200">
                   <h4 class="text-uppercase fw-bold">Useful Links</h4>
                   <ul class="list-unstyled">
                       <li><a href="#">Home</a></li>
@@ -473,7 +478,7 @@
                   </ul>
               </div>
 
-              <div class="col-lg-2 col-md-3 footer-links">
+              <div class="col-lg-2 col-md-3 footer-links" data-aos="fade-up" data-aos-delay="300">
                   <h4 class="text-uppercase fw-bold">Our Services</h4>
                   <ul class="list-unstyled">
                       <li><a href="#">Web Design</a></li>
@@ -484,7 +489,7 @@
                   </ul>
               </div>
 
-              <div class="col-lg-4 col-md-12 footer-newsletter">
+              <div class="col-lg-4 col-md-12 footer-newsletter" data-aos="fade-up" data-aos-delay="400">
                   <h4 class="text-uppercase fw-bold">Our Newsletter</h4>
                   <p>Subscribe to receive the latest news about our products and services.</p>
                   <form action="forms/newsletter.php" method="post" class="php-email-form">
@@ -501,11 +506,115 @@
       </div>
 
       <div class="container text-center mt-4">
-          <p>© <strong>Bootslander</strong> All Rights Reserved</p>
+          <p>© <strong>Perusahaan</strong> All Rights Reserved</p>
           <p>Designed by <a href="https://bootstrapmade.com/" class="text-primary">BootstrapMade</a></p>
       </div>
 
     </footer>
     
+    <!-- Scripts (pindahkan semua script ke bawah) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    // Inisialisasi AOS hanya sekali saat DOM content loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Inisialisasi AOS dengan konfigurasi
+        AOS.init({
+            duration: 800, // durasi animasi (ms)
+            easing: 'ease-in-out', // jenis easing
+            once: true, // apakah animasi hanya terjadi sekali
+            mirror: false, // apakah animasi harus dibalik saat pengguna scroll ke atas
+            offset: 100 // offset (dalam piksel) dari posisi trigger asli
+        });
+        
+        // Membuat fungsi untuk highlight active nav item
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        function changeActiveNav() {
+            let scrollPos = window.scrollY + 150; // Offset supaya lebih responsif
+
+            sections.forEach((section) => {
+                if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                    navLinks.forEach((link) => {
+                        link.classList.remove("active");
+                        if (link.getAttribute("href") && link.getAttribute("href").substring(1) === section.id) {
+                            link.classList.add("active");
+                        }
+                    });
+                }
+            });
+        }
+
+        // Panggil fungsi sekali untuk mengatur status awal
+        changeActiveNav();
+        
+        // Tambahkan event listener untuk scroll
+        window.addEventListener("scroll", changeActiveNav);
+
+      // Fungsi untuk memulai animasi angka
+      const counters = document.querySelectorAll(".count-number");
+
+        // Fungsi easing (lambat di awal & akhir, cepat di tengah)
+        const easeInOutQuad = (t) => {
+            return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+        };
+
+        // Fungsi untuk memulai animasi angka dengan requestAnimationFrame
+        const startCount = (element) => {
+            const target = +element.getAttribute("data-target");
+            let startTime;
+            const duration = 2500; // Animasi berjalan selama 2 detik
+
+            const updateCount = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1); // Pastikan tidak lebih dari 1
+                const easedProgress = easeInOutQuad(progress); // Gunakan easing function
+                const currentValue = Math.floor(target * easedProgress); // Hitung angka saat ini
+                element.innerText = currentValue; // Update teks angka
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCount); // Lanjutkan animasi
+                } else {
+                    element.innerText = target; // Pastikan angka mencapai target
+                    element.setAttribute("data-counted", "true"); // Tandai sudah dihitung
+                }
+            };
+
+            requestAnimationFrame(updateCount); // Mulai animasi
+        };
+
+        // Intersection Observer untuk memulai animasi hanya sekali
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    const element = entry.target;
+                    const alreadyCounted = element.getAttribute("data-counted");
+
+                    if (entry.isIntersecting && alreadyCounted === "false") {
+                        startCount(element); // Mulai animasi
+                        observer.unobserve(element); // Hapus observer setelah animasi berjalan
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        // Jalankan observer untuk setiap counter
+        counters.forEach((counter) => observer.observe(counter));
+    });
+
+    // Efek Navbar Berubah Warna Saat Scroll (terpisah dari DOMContentLoaded)
+    window.addEventListener("scroll", function () {
+        let navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+    </script>
+
 </body>
 </html>
